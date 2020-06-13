@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Home Page</title>
   </head>
   <body>
-  $END$
+  <h1>Welcome to Online Food Ordering System</h1>
+  <div>
+    <p>Customer <a href="login.jsp">Login</a></p>
+    <p>Admin <a href="login.jsp">Login</a></p>
+  </div>
   </body>
 </html>
