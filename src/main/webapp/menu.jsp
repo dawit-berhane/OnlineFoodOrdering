@@ -8,12 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
     <title>Menu</title>
     <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="resources/js/menu.js"></script>
 </head>
 <body>
+<div class="backtohome">
+    <a href="index.jsp">  Home </a>
+</div>
 <h1>Menu Page</h1>
 Welcome ${userName}
 <div>
