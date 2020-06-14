@@ -11,7 +11,7 @@
     <title>Login Page</title>
 </head>
 <body>
-<form action="welcome" method="post">
+<form action="menu" method="post">
     <h2>Sign in</h2>
     <label>User Name: <input type="text" name="userName" value="${cookie.user.value}"></label>
     <label>Password: <input type="password" name="password"></label>
