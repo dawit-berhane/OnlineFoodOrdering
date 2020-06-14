@@ -20,13 +20,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${products}" var="product">
-        <tr>
-            <td><c:out value="${product.id}" /></td>
-            <td><c:out value="${product.name}" /></td>
-            <td><c:out value="${product.price}" /></td>
-        </tr>
-    </c:forEach>
+
     </tbody>
 </table>
 </body>
