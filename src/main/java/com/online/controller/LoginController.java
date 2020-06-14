@@ -37,7 +37,7 @@ public class LoginController extends HttpServlet {
             }
 
 
-            session.setAttribute("userName", userName);
+            session.setAttribute("userName", customerDb.get(userName).getUserName());
             resp.sendRedirect("menu.jsp");
         }else {
             resp.sendRedirect("login.jsp");
