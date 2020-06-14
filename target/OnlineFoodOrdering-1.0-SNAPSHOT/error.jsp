@@ -12,7 +12,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Error</title>
-    <link rel="stylesheet" href='<c:url value="resources/css/main.css"/>' />
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 

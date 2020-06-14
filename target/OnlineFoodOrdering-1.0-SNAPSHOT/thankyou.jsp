@@ -12,10 +12,14 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
     <title>thank you</title>
     <jsp:include page="resources.jsp"></jsp:include>
 </head>
 <body>
+<div class="backtohome">
+    <a href="index.jsp"> Home </a>
+</div>
 <div class="jumbotron">
     <h1 class="display-4"> Thank you!</h1>
     <p class="lead">We hope to see you again.</p>

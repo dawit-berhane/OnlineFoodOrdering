@@ -12,13 +12,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <title>Sign Up</title>
     <jsp:include page="resources.jsp"></jsp:include>
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div id="signup">
     <div class="container">
-        <h3>SignUp</h3>
+        <h3>Sign Up</h3>
+
         <c:if test="${not empty error}" >${error}</c:if>
 
         <form class="formValidator" method="post" action="signup">
@@ -75,7 +78,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                        Check me out
+                        Check me in
                     </label>
                 </div>
             </div>
