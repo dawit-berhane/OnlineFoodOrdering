@@ -14,9 +14,6 @@
 <h1>Menu Page</h1>
 Welcome ${userName}
 <div>
-<<<<<<< HEAD
-    <span> <img src="resources/images/burger.jpg" alt="burger"></span>
-=======
     <table>
         <tr>
             <th>Menu</th>
@@ -43,7 +40,6 @@ Welcome ${userName}
             <td><button id="fish" type="button">Add</button></td>
         </tr>
     </table>
->>>>>>> 566e63bad389c32294ebd38ab4cb39fa67e0f8dd
 </div>
 </body>
 </html>
