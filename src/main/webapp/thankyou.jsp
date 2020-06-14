@@ -13,15 +13,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>thank you</title>
-    <jsp:include page="resources.jsp"></jsp:include>
+    <link rel="stylesheet" href='<c:url value="resources/css/style.css"/>' />
 </head>
 <body>
-<div class="jumbotron">
-    <h1 class="display-4"> Thank you!</h1>
-    <p class="lead">We hope to see you again.</p>
-    <hr class="my-4">
-    <p></p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Login again</a>
+<div id="thankyou">
+    <div class="container">
+   <p>Thank you. Please Come Again </p>
+    </div>
 </div>
 </body>
 </html>

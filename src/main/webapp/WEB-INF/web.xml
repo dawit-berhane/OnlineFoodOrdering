@@ -17,19 +17,12 @@
         <servlet-name>Signup</servlet-name>
         <servlet-class>com.online.controller.SignupController</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>Signup</servlet-name>
-        <url-pattern>/signup</url-pattern>
-    </servlet-mapping>
-
-
     <servlet>
         <servlet-name>ErrorController</servlet-name>
         <servlet-class>com.online.controller.ErrorController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ErrorController</servlet-name>
-        <url-pattern>/error</url-pattern>
+        <servlet-name>Signup</servlet-name>
+        <url-pattern>/signup</url-pattern>
     </servlet-mapping>
-
 </web-app>
