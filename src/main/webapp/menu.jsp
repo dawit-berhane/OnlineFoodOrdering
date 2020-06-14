@@ -9,37 +9,48 @@
 <html>
 <head>
     <title>Menu</title>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/js/menu.js"></script>
 </head>
 <body>
 <h1>Menu Page</h1>
 Welcome ${userName}
 <div>
-    <table>
-        <tr>
-            <th>Menu</th>
-            <th>Ingredient</th>
-            <th>Price</th>
-            <th>Order</th>
-        </tr>
-        <tr>
-            <td><img src="resources/images/burger.jpg" alt="burger"></td>
-            <td>Burger made with beef and cheese</td>
-            <td>$6</td>
-            <td><button id="burger" type="button">Add</button></td>
-        </tr>
-        <tr>
-            <td><img src="resources/images/steak.jpg" alt="steak"></td>
-            <td>Steak with rice</td>
-            <td>$12</td>
-            <td><button id="steak" type="button">Add</button></td>
-        </tr>
-        <tr>
-            <td><img src="resources/images/fish.jpg" alt="fish"></td>
-            <td>grilled fish</td>
-            <td>$20</td>
-            <td><button id="fish" type="button">Add</button></td>
-        </tr>
-    </table>
+    <form action="checkout" method="post">
+        <table id="menuTable">
+            <tr>
+                <th>Menu</th>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Order</th>
+            </tr>
+            <tr>
+                <td><img src="resources/images/burger.jpg" alt="burger" width="100" height="100" ></td>
+                <td>Burger made with beef and cheese</td>
+                <td> <input type="text" maxlength="2" size="2" value="1"> </td>
+                <td>$6</td>
+                <td><button class="btnOrder" type="button" value="burger">Add</button></td>
+            </tr>
+            <tr>
+                <td><img src="resources/images/steak.jpg" alt="steak" width="100" height="100"></td>
+                <td>Steak with rice</td>
+                <td> <input type="text" maxlength="2" size="2" value="1"> </td>
+                <td>$12</td>
+                <td><button class="btnOrder" type="button" value="steak">Add</button></td>
+            </tr>
+            <tr>
+                <td><img src="resources/images/fish.jpg" alt="fish" width="100" height="100"></td>
+                <td>grilled fish</td>
+                <td> <input type="text" maxlength="2" size="2" value="1"> </td>
+                <td>$20</td>
+                <td><button class="btnOrder" type="button" value="fish">Add</button></td>
+            </tr>
+        </table>
+        <button id="btnChkout" type="submit">Continue to Checkout</button>
+    </form>
+
 </div>
 </body>
 </html>

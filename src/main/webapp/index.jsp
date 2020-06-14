@@ -15,7 +15,7 @@
   <div>
     <p>Customer <a href="login.jsp">Login</a></p>
     <p>Admin <a href="login.jsp">Login</a></p>
-    <p>signup <a href="signup.jsp">Login</a></p>
+    <p>signup <a href="signup.jsp">Signup</a></p>
   </div>
   </body>
 </html>
