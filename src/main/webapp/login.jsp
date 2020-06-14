@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Login Page</title>
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <form action="menu" method="post">
