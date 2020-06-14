@@ -11,7 +11,10 @@
     <title>Menu</title>
 </head>
 <body>
+<h1>Menu Page</h1>
 Welcome ${userName}
-This is menu page.
+<div>
+    <span> <img src="resources/images/burger.jpg" alt="burger"></span>
+</div>
 </body>
 </html>
