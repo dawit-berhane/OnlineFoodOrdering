@@ -13,7 +13,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Sign Up</title>
-    <jsp:include page="basic.jsp"></jsp:include>
 </head>
 <body>
 <div id="signup">
@@ -21,14 +20,16 @@
         <h3>SignUp</h3>
         <c:if test="${not empty error}" >${error}</c:if>
         <form class="formValidator" method="post" action="signup">
+
             <div class="form-group">
                 <label for="userName">User Name:<input type="text" class="form-control" id="userName" placeholder="Enter user name.." name="userName"></label>
             </div>
+
             <div class="form-group">
-                <label for="name">Full Name:<input type="text" class="form-control" id="name" placeholder="Enter full name.." name="fName"></label>
+                <label for="fname">First Name:<input type="text" class="form-control" id="fname" placeholder="Enter First Name.." name="fname"></label>
             </div>
             <div class="form-group">
-                <label for="email">Email:<input type="email" class="form-control" id="email" placeholder="Enter email.." name="email"></label>
+                <label for="lname">Last Name:<input type="text" class="form-control" id="lname" placeholder="Enter Last Name.." name="lname"></label>
             </div>
             <div class="form-group">
                 <label for="phone">Phone:<input type="number" class="form-control" id="phone" placeholder="Enter Your Phone" name="phone"></label>
