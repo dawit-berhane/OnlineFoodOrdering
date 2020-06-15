@@ -13,6 +13,7 @@
     <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="resources/js/menu.js"></script>
+    <script type="text/javascript" src="resources/js/cart.js"></script>
 </head>
 <body>
 <div class="backtohome">
@@ -35,38 +36,40 @@ Welcome ${userName}
                 <td>Burger made with beef and cheese</td>
                 <td> <input type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$6</td>
-                <td><button class="btnOrder" type="button" value="burger">Add</button></td>
+                <td><button class="btnOrder" type="button" value="Burger">Add</button></td>
             </tr>
             <tr>
                 <td><img src="resources/images/steak.jpg" alt="steak" width="100" height="100"></td>
                 <td>Steak with rice</td>
                 <td> <input type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$12</td>
-                <td><button class="btnOrder" type="button" value="steak">Add</button></td>
+                <td><button class="btnOrder" type="button" value="Steak">Add</button></td>
             </tr>
             <tr>
                 <td><img src="resources/images/fish.jpg" alt="fish" width="100" height="100"></td>
                 <td>grilled fish</td>
                 <td> <input type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$20</td>
-                <td><button class="btnOrder" type="button" value="fish">Add</button></td>
+                <td><button class="btnOrder" type="button" value="Fish">Add</button></td>
             </tr>
         </table>
-        <button id="btnChkout" type="button"> <a href="orderCart.jsp" >Continue to Checkout</a></button>
     </form>
 
-    <table>
+    <table id="orderTbl">
         <thead>
         <tr>
-            <th>Selected Foods</th>
+            <th>No.</th>
             <th>Name</th>
             <th>Price</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
 
         </tbody>
     </table>
+    <button id="btnChkout" type="button"> <a href="orderCart.jsp">Continue to Checkout</a> </button>
+
 
 </div>
 </body>
