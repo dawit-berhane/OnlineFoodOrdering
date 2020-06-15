@@ -16,9 +16,11 @@
   <meta name="description" content="Response design">
   <meta name="author" content="bootstrap">
   <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
-   <link href="resources/css/grid.css" type="text/css" rel="stylesheet">
+
    <title>Home Page</title>
   <jsp:include page="resources.jsp"></jsp:include>
+    <link href="resources/css/grid.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
 <div class="base">
@@ -34,9 +36,9 @@
   </div>
 
   <div class="row">
-    <div id="col1" class="col-6 col-md-4 col-lg-4">Column1</div>
-    <div id="col2" class="col-6 col-md-4 col-lg-4">Column2</div>
-    <div id="col3" class="col-12 col-md-4 col-lg-4">Column3</div>
+    <div id="col1" class="col-6 col-md-4 col-lg-4"><img src="resources/images/dinning.jpg" width="1300" class="img-fluid" alt="Responsive image"></div>
+    <div id="col2" class="col-6 col-md-4 col-lg-4"><img src="resources/images/back.jpeg" height="300" width="450"  class="img-fluid" alt="Responsive image"></div>
+    <div id="col3" class="col-12 col-md-4 col-lg-4"><img src="resources/images/bar.jpeg"  class="img-fluid" alt="bar" height="300" width="450"></div>
   </div>
   <footer>
       <div class="fixed">
