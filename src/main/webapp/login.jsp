@@ -10,14 +10,36 @@
 <head>
     <title>Login Page</title>
     <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
+    <jsp:include page="resources.jsp"></jsp:include>
 </head>
 <body>
-<form action="menu" method="post">
-    <h2>Sign in</h2>
-    <label>User Name: <input type="text" name="userName" value="${cookie.user.value}"></label>
-    <label>Password: <input type="password" name="password"></label>
-    <label><button type="submit">Log in</button></label>
-</form>
+<div id="login">
+    <div class="container bg-info">
+
+        <h3>Log in</h3>
+
+        <form class="formValidator bg-info" method="post" action="menu">
+            <div class="form-row bg-info">
+                <div class="form-group col-md-6">
+                    <label>User Name: </label> <input type="text" class="form-control"  placeholder="Enter username.." value="${cookie.user.value}" name="userName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Password: </label> <input type="password" class="form-control" placeholder="password.." name="password">
+                </div>
+                <label>
+                    <button type="submit">Log in</button>
+                </label>
+            </div>
+        </form>
+        <form action="signup" method="post">
+            <p>don't have an account? </p>
+            <label>
+                <button type="button"> <a href="signup.jsp">sign up</a></button>
+            </label>
+        </form>
+
+    </div>
+</div>
 <span style="color: #ff0000">${error_msg}</span>
 </body>
 </html>
