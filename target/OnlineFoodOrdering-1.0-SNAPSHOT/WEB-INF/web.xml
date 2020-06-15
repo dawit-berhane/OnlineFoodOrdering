@@ -41,4 +41,13 @@
         <url-pattern>/order</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>com.online.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
 </web-app>

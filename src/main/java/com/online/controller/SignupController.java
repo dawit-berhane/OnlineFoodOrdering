@@ -40,14 +40,14 @@ public class SignupController extends HttpServlet {
 
         if(customerDb.get(userName) != null){
             request.setAttribute("error" , "you already have an account ");
-            request.getRequestDispatcher("/error.jsp");
+            request.getRequestDispatcher("error.jsp");
             return;
         }
 
         Customer cust =  new Customer(4, firstName,lastName, userName,password,phone, "");
 
         customerDAO.addCustomer(cust);
-        request.getRequestDispatcher("/menu.jsp").forward(request,response);
+        request.getRequestDispatcher("menu.jsp").forward(request,response);
 
     }
 

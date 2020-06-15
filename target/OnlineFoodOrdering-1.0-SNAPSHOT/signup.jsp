@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label> <input type="password" class="form-control" id="inputPassword4" name="password">
+                    <label for="inputPassword4">Password</label> <input type="password" class="form-control" id="inputPassword4" placeholder="password.."name="password">
                 </div>
 
             </div>
@@ -73,7 +73,7 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-info">Sign in</button>
+            <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
     </div>
 </div>
