@@ -9,9 +9,14 @@
 <html>
 <head>
     <title>Order Cart</title>
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
+    <title>Menu</title>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/js/menu.js"></script>
 </head>
 <body>
-<table id="tbl_products">
+<table id="tbl_ordered">
     <thead>
     <tr>
         <th>Selected Foods</th>

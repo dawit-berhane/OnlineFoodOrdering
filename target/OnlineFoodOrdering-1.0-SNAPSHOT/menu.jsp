@@ -52,8 +52,21 @@ Welcome ${userName}
                 <td><button class="btnOrder" type="button" value="fish">Add</button></td>
             </tr>
         </table>
-        <button id="btnChkout" type="submit">Continue to Checkout</button>
+        <button id="btnChkout" type="button"> <a href="orderCart.jsp" >Continue to Checkout</a></button>
     </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Selected Foods</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 
 </div>
 </body>

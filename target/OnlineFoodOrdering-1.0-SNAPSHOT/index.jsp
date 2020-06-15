@@ -33,8 +33,23 @@
     <div class="col-2 col-md-2 col-lg-1"><a href="login.jsp">Login</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="login.jsp"> Admin</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="signup.jsp">sign up</a></div>
+<<<<<<< HEAD
+||||||| merged common ancestors
+||||||||| merged common ancestors
+    <div class="col-2 col-md-2 col-lg-1"><p> <a href="login.jsp">Login</a></p></div>
+    <div class="col-2 col-md-2 col-lg-1"><p><a href="login.jsp"> Admin</a></p></div>
+    <div class="col-2 col-md-2 col-lg-1"><p> <a href="signup.jsp">signup</a></p></div>
+=========
+    <div class="col-2 col-md-2 col-lg-1"><p> <a href="login.jsp">Login</a></p></div>
+    <div class="col-2 col-md-2 col-lg-1"><p><a href="login.jsp"> Admin</a></p></div>
+    <div class="col-2 col-md-2 col-lg-1"><p> <a href="signup.jsp">signup</a></p></div>
 
+>>>>>>>>> Temporary merge branch 2
+=======
+
+>>>>>>> 56340e32968ddcf4bf0691eba7ac2fafd3194155
   </div>
+
   <div class="row">
     <div id="col1" class="col-6 col-md-4 col-lg-4"><img src="resources/images/dinning.jpg" width="1300" class="img-fluid" alt="Responsive image"></div>
     <div id="col2" class="col-6 col-md-4 col-lg-4"><img src="resources/images/back.jpeg" height="300" width="450"  class="img-fluid" alt="Responsive image"></div>
