@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.util.Map;
 
 
-
 public class SignupController extends HttpServlet {
 
     CustomerDAO customerDAO = new CustomerDAO();
@@ -20,7 +19,9 @@ public class SignupController extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/signup.jsp");
+
+
+        request.getRequestDispatcher("signup.jsp");
 
     }
 

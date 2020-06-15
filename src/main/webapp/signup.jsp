@@ -12,42 +12,33 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Sign Up</title>
     <jsp:include page="resources.jsp"></jsp:include>
     <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
+    <title>Sign Up</title>
 </head>
 <body>
 <div id="signup">
-    <div class="container">
+    <div class="container bg-info">
+
         <h3>Sign Up</h3>
 
-        <c:if test="${not empty error}" >${error}</c:if>
-
-        <form class="formValidator" method="post" action="signup">
-
-            <div class="form-row">
-
+        <form class="formValidator bg-info" method="post" action="signup">
+            <div class="form-row bg-info">
                 <div class="form-group col-md-6">
                     <label for="fname">First Name: </label> <input type="text" class="form-control" id="fname" placeholder="Enter First name.." name="fname">
                 </div>
-
                 <div class="form-group col-md-6">
                     <label for="lname">Last Name: </label> <input type="text" class="form-control" id="lname" placeholder="Enter Last Name.." name="lname">
                 </div>
-
 
                 <div class="form-group col-md-6">
                     <label for="userame">User Name: </label> <input type="text" class="form-control" id="userame" placeholder="Enter user name.." name="userName">
                 </div>
 
-
                 <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label> <input type="password" class="form-control" id="inputPassword4" name="password">
+                    <label for="inputPassword4">Password</label> <input type="password" class="form-control" id="inputPassword4" placeholder="password.."name="password">
                 </div>
-                <div class="form-group">
-                    <label for="cpwd">Confirm Password:<input type="password" class="form-control" id="cpwd" placeholder="Confirm password.." name="cpassword"></label>
-                </div>
+
             </div>
             <div class="form-group">
                 <label for="inputAddress">Address</label>

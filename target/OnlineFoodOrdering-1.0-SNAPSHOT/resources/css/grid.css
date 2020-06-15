@@ -1,10 +1,8 @@
-body {
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #406156;
+body{
+    background-color: #A2B964;
+
 }
-a
-{
+a {
     text-decoration: none;
     color: white;
 }
@@ -63,6 +61,6 @@ div.fixed {
     right: 0;
     width: 200px;
     border: 3px solid #406156;
-    background-color: #A2B964;
+    background-color: #406156;
     color: white;
 }
