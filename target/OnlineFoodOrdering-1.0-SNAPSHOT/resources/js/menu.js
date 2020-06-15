@@ -1,49 +1,43 @@
 $(function (){
-<<<<<<< HEAD
     $('.btnOrder').click(addOrder);
-||||||| merged common ancestors
-    $('.btnOrder').click(menuSelected);
-=======
-    $('.btnOrder').click(menuSelected);
-    $('.btnOrder').click(goToCart);
->>>>>>> 56340e32968ddcf4bf0691eba7ac2fafd3194155
+    $('#btnChkout').click(checkOut);
 
     function addOrder(){
         let orderValue = $(this).val();
-        createObject(orderValue);
-        localStorage.setItem(orderValue,orderValue);
-        console.log(localStorage);
+        orderValue = createObject(orderValue);
+        //localStorage.setItem(orderValue,orderValue);
+        //console.log(localStorage);
         $.post('order',{order: JSON.stringify(orderValue)}, orderMeal, "json")
     }
+
+    function checkOut() {
+        $('orderTbl').siblings().next()
+
+    }
 })
-<<<<<<< HEAD
 let orderedItems = [];
 function createObject(order){
     let item = {};
     item.order = order;
-    orderedItems.push(item);
+    return item;
 }
 
 function orderMeal(data){
     //data = JSON.parse(data);
-    var td0=$('<td>').text(data.id);
-    var td1 = $('<td>').text(data.name);
-    var td2 = $('<td>').text(data.price);
-    var tr = $('<tr>').append(td0).append(td1).append(td2);
-    $('#tbl_ordered>tbody').append(tr);
-}
-||||||| merged common ancestors
-=======
-let orderedItems = [];
-function createObject(order){
-    let item = {};
-    item.order(order);
-    orderedItems.push(item);
+    let td0=$('<td>').text(data.id);
+    let td1 = $('<td>').text(data.name);
+    let td2 = $('<td>').text('$'+ data.price);
+
+    let button = $("<button>",{
+        'text': 'Remove',
+        'click': removeOrder
+    })
+    //let td3 = $('<td>').append(button)
+    var tr = $('<tr>').append(td0).append(td1).append(td2).append(button);
+    $('#orderTbl > tbody').append(tr);
 }
 
-function goToCart() {
-    $.post('ordered', {
-        order: JSON.stringify(orderedItems)
-    })
+function removeOrder() {
+    $(this).parent().remove();
+
 }
->>>>>>> 56340e32968ddcf4bf0691eba7ac2fafd3194155
