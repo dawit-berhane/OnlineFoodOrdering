@@ -31,9 +31,9 @@
     <div class="col-2 col-md-2 col-lg-1"><a href="signup.jsp">sign up</a></div>
   </div>
   <div class="row">
-    <div id="col1" class="col-6 col-md-4 col-lg-4">Column1</div>
-    <div id="col2" class="col-6 col-md-4 col-lg-4">Column2</div>
-    <div id="col3" class="col-12 col-md-4 col-lg-4">Column3</div>
+    <div id="col1" class="col-6 col-md-4 col-lg-4"><img src="resources/images/dinning.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div id="col2" class="col-6 col-md-4 col-lg-4"><img src="resources/images/back.jpeg" height="300" width="400" alt="Responsive image"></div>
+    <div id="col3" class="col-12 col-md-4 col-lg-4"><img src="resources/images/bar.jpeg" alt="bar" height="300" width="400"></div>
   </div>
   <footer>
       <div class="fixed">
