@@ -22,7 +22,7 @@
 
         <h3>Sign Up</h3>
 
-        <form class="formValidator bg-info" method="post" action="signup">
+        <form class="formValidator bg-info"  action="signup">
             <div class="form-row bg-info">
                 <div class="form-group col-md-6">
                     <label for="fname">First Name: </label> <input type="text" class="form-control" id="fname" placeholder="Enter First name.." name="fname">

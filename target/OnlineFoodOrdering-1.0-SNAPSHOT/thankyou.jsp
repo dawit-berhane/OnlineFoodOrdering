@@ -17,15 +17,12 @@
     <jsp:include page="resources.jsp"></jsp:include>
 </head>
 <body>
-<div class="backtohome">
-    <a href="index.jsp"> Home </a>
-</div>
-<div class="jumbotron">
-    <h1 class="display-4"> Thank you!</h1>
-    <p class="lead">We hope to see you again.</p>
+<div class="jumbotron bg-info">
+    <h3 class="display-4"> you are logged out!</h3>
+    <p class="lead">Thank you ! We hope to see you again.</p>
     <hr class="my-4">
     <p></p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Login again</a>
+    <a class="btn btn-primary btn-lg" href="login.jsp" role="button">Login again</a></a>
 </div>
 </body>
 </html>

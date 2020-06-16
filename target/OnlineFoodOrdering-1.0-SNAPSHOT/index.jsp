@@ -16,11 +16,9 @@
   <meta name="description" content="Response design">
   <meta name="author" content="bootstrap">
   <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
-
-   <title>Home Page</title>
   <jsp:include page="resources.jsp"></jsp:include>
     <link href="resources/css/grid.css" type="text/css" rel="stylesheet">
-
+  <title>Home Page</title>
 </head>
 <body>
 <div class="base">
@@ -33,6 +31,7 @@
     <div class="col-2 col-md-2 col-lg-1"><a href="login.jsp">Login</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="login.jsp"> Admin</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="signup.jsp">sign up</a></div>
+    <div class="col-2 col-md-2 col-lg-1"><a href="logout.jsp">Log out</a></div>
   </div>
 
   <div class="row">

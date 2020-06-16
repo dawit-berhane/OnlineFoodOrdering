@@ -40,6 +40,7 @@
         <servlet-name>order</servlet-name>
         <url-pattern>/order</url-pattern>
     </servlet-mapping>
+<<<<<<< HEAD
     
     <servlet>
         <servlet-name>checkout</servlet-name>
@@ -49,4 +50,18 @@
         <servlet-name>checkout</servlet-name>
         <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
+||||||| merged common ancestors
+
+=======
+
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>com.online.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+>>>>>>> a28a191ad884bb7b6032d02245d5493a2f346bbc
 </web-app>

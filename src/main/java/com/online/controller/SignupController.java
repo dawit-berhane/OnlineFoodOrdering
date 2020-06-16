@@ -20,36 +20,36 @@ public class SignupController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-
-        request.getRequestDispatcher("signup.jsp");
-
-    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // get values from the form
 
         HttpSession session = request.getSession();
 
-        String userName = request.getParameter("userName") ;
-        String firstName = request.getParameter("fname") ;
-        String lastName = request.getParameter("lname") ;
-        String phone = request.getParameter("phone");
-        String password = request.getParameter("password");
+        String userName = request.getParameter("userName");
 
-        //check if user already exists
+        if(userName.equals("mesfin")) {
+            session.setAttribute("userName" , userName);
+            response.sendRedirect("loginsecond.jsp");
+        }
+        else{
 
-        if(customerDb.get(userName) != null){
-            request.setAttribute("error" , "you already have an account ");
-            request.getRequestDispatcher("/error.jsp");
-            return;
+            String userame = request.getParameter("userName") ;
+            String firstName = request.getParameter("fname") ;
+            String lastName = request.getParameter("lname") ;
+            String phone = request.getParameter("phone");
+            String password = request.getParameter("password");
+
+            Customer cust =  new Customer(4, firstName,lastName, userame,password,phone, "");
+            customerDAO.addCustomer(cust);
+            
+            response.sendRedirect("menu.jsp");
         }
 
-        Customer cust =  new Customer(4, firstName,lastName, userName,password,phone, "");
-
-        customerDAO.addCustomer(cust);
-        request.getRequestDispatcher("/menu.jsp").forward(request,response);
-
     }
-
-
 }
+
+
+
+
+
+
+
