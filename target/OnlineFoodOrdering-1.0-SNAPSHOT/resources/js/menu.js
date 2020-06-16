@@ -1,6 +1,5 @@
 $(function (){
     $('.btnOrder').click(addOrder);
-    $('#btnChkout').click(checkOut);
 
     function addOrder(){
         let orderValue = $(this).val();
@@ -8,11 +7,6 @@ $(function (){
         //localStorage.setItem(orderValue,orderValue);
         //console.log(localStorage);
         $.post('order',{order: JSON.stringify(orderValue)}, orderMeal, "json")
-    }
-
-    function checkOut() {
-        $('orderTbl').siblings().next()
-
     }
 })
 let orderedItems = [];
@@ -24,8 +18,8 @@ function createObject(order){
 
 function orderMeal(data){
     //data = JSON.parse(data);
-    let td0=$('<td>').text(data.id);
-    let td1 = $('<td>').text(data.name);
+    let td0=$('<td>').text(data.name);
+    let td1 = $('<td>').text(data.description);
     let td2 = $('<td>').text('$'+ data.price);
 
     let button = $("<button>",{

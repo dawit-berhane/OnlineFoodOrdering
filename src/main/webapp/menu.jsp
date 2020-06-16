@@ -58,17 +58,17 @@ Welcome ${userName}
     <table id="orderTbl">
         <thead>
         <tr>
-            <th>No.</th>
-            <th>Name</th>
+            <th>Menu</th>
+            <th>Description</th>
             <th>Price</th>
             <th>Action</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody >
 
         </tbody>
     </table>
-    <button id="btnChkout" type="button"> <a href="orderCart.jsp">Continue to Checkout</a> </button>
+    <button id="btnChkout" type="button">Continue to Checkout</button>
 
 
 </div>
