@@ -16,7 +16,7 @@
     <script type="text/javascript" src="resources/js/menu.js"></script>
 </head>
 <body>
-<table id="tbl_ordered">
+<table id="checkoutTable">
     <thead>
     <tr>
         <th>Selected Foods</th>
@@ -26,7 +26,13 @@
     </tr>
     </thead>
     <tbody>
-
+    <c:forEach items="${products}" var="product">
+        <tr>
+            <td><c:out value="${product.id}" /></td>
+            <td><c:out value="${product.name}" /></td>
+            <td><c:out value="${product.price}" /></td>
+        </tr>
+    </c:forEach>
     </tbody>
 </table>
 </body>

@@ -11,7 +11,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Basic</title>
     <link rel="stylesheet" href="<c:url value='resources/css/bootstrap/bootstrap.min.css'/>">
     <script src="<c:url value='resources/js/jquery.min.js'/>" type="text/javascript"></script>
     <script src="<c:url value='resources/js/bootstrap.min.js'/>" type="text/javascript"></script>

@@ -13,6 +13,7 @@
     <jsp:include page="resources.jsp"></jsp:include>
 </head>
 <body>
+
 <div id="login">
     <div class="container bg-info">
 
