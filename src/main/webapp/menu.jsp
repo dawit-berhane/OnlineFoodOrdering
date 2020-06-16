@@ -22,7 +22,7 @@
 <h1>Menu Page</h1>
 Welcome ${userName}
 <div>
-    <form action="checkout" method="post">
+    <form action="order" method="post">
         <table id="menuTable">
             <tr>
                 <th>Menu</th>
@@ -34,7 +34,7 @@ Welcome ${userName}
             <tr>
                 <td><img src="resources/images/burger.jpg" alt="burger" width="100" height="100" ></td>
                 <td>Burger made with beef and cheese</td>
-                <td> <input type="text" maxlength="2" size="2" value="1"> </td>
+                <td> <input id="Burger" type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$6</td>
                 <td><button class="btnOrder" type="button" value="Burger">Add</button></td>
             </tr>
@@ -55,20 +55,23 @@ Welcome ${userName}
         </table>
     </form>
 
-    <table id="orderTbl">
-        <thead>
-        <tr>
-            <th>Menu</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Action</th>
-        </tr>
-        </thead>
-        <tbody >
+    <form action="checkout" method="post">
+        <table id="orderTbl">
+            <thead>
+            <tr>
+                <th>Menu</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody >
 
-        </tbody>
-    </table>
-    <button id="btnChkout" type="button">Continue to Checkout</button>
+            </tbody>
+        </table>
+        <button id="btnChkout" type="button">Continue to Checkout</button>
+    </form>
+
 
 
 </div>
