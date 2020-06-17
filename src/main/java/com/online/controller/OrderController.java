@@ -48,7 +48,7 @@ public class OrderController extends HttpServlet {
         //System.out.println(result);
         menus = dao.getAllProducts();
         Product ordered = menus.get(result);
-
+        //session.setAttribute("food", ordered);
         //System.out.println(ordered.getId());
 
         PrintWriter out = resp.getWriter();

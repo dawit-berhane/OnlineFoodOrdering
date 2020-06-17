@@ -69,7 +69,7 @@ Welcome ${userName}
 
             </tbody>
         </table>
-        <button id="btnChkout" type="button">Continue to Checkout</button>
+        <button id="btnChkout" type="submit">Continue to Checkout</button>
     </form>
 
 
