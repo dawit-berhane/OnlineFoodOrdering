@@ -4,7 +4,10 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.online.dao.CustomerDAO;
 import com.online.dao.ProductDAO;
+import com.online.model.Cart;
+import com.online.model.Customer;
 import com.online.model.Product;
 
 import javax.servlet.RequestDispatcher;
@@ -25,6 +28,8 @@ public class CheckoutController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     Product menu;
     ProductDAO menuDb;
+    CustomerDAO customerDAO;
+    Cart cart;
     Map<String,Product> menus;
     List<Product> checkout;
     Gson mapper = new Gson();
@@ -32,16 +37,12 @@ public class CheckoutController extends HttpServlet {
     public void init() throws ServletException {
         menu = new Product();
         menuDb = new ProductDAO();
+        customerDAO = new CustomerDAO();
         menus = new HashMap<>();
         checkout =  new ArrayList<>();
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-//        menu = (Product) session.getAttribute("food");
-//        req.setAttribute("checkout",menu);
-//        RequestDispatcher view = req.getRequestDispatcher("orderCart.jsp");
-//        view.forward(req, resp);
 
     }
 
@@ -60,24 +61,24 @@ public class CheckoutController extends HttpServlet {
             System.out.println(length);
             String ordersList;
 
+        HttpSession session = req.getSession();
+        Map<String, Customer> customerMap = customerDAO.getCustomerDb();
+        String name = (String) req.getSession().getAttribute("userName");
+        cart = new Cart(customerMap.get(name));
+        session.setAttribute("address", customerMap.get(name).getAddress());
+
             menus = menuDb.getAllProducts();
             for (int i = 1; i < length ; i++) {
                 ordersList = jobject.get("" + i).getAsString();
                 menu = menus.get(ordersList);
                 checkout.add(menu);
+                cart.addProduct(menu); // adding ordered menus to cart data
             }
             System.out.println(menu.getDescription());
-            HttpSession session = req.getSession();
-//        session.setAttribute("menu", menu);
 
-            //PrintWriter out = resp.getWriter();
-            //out.print(mapper.toJson(menu));
 
-            //req.setAttribute("checkout", menu);
             session.setAttribute("checkout", checkout);
-            //RequestDispatcher requestDispatcher = req.getRequestDispatcher("orderCart.jsp");
             resp.sendRedirect("orderCart.jsp");
-            //requestDispatcher.forward(req, resp);
 
     }
 }

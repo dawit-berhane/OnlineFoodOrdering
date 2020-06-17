@@ -1,0 +1,40 @@
+#menuTable, #orderTbl, #checkoutTable{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#menuTable td, #menuTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#menuTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#menuTable tr:hover {background-color: #ddd;}
+
+#menuTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #cb7e3a;
+    color: white;
+}
+
+#orderTbl th, #checkoutTable th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #cbb83a;
+    color: white;
+}
+
+.btnOrder, #btnChkout{
+    background-color: linen;
+}
+
+#payBtn{
+    background-color: orangered;
+    width: 200px;
+    height: 50px;
+}
