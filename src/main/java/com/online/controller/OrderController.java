@@ -38,7 +38,6 @@ public class OrderController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = req.getSession();
-        //System.out.println(session.getAttribute("userName"));
         String jsonString = req.getParameter("order");
         //System.out.println(jsonString);
         JsonElement jelement = new JsonParser().parse(jsonString);
@@ -48,7 +47,7 @@ public class OrderController extends HttpServlet {
         //System.out.println(result);
         menus = dao.getAllProducts();
         Product ordered = menus.get(result);
-
+        //session.setAttribute("food", ordered);
         //System.out.println(ordered.getId());
 
         PrintWriter out = resp.getWriter();
