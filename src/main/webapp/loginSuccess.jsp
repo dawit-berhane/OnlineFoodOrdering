@@ -1,8 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: LocalUser
+  Date: 6/10/2020
+  Time: 3:40 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login page</title>
+    <title>login successful</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <link href="resource/breakfast.css" rel="stylesheet">
     <script src="resource/action.js"></script>
@@ -17,22 +23,11 @@
         <li><a href="dinner">dinner</a></li>
         <li><a href="dessert">dessert</a></li>
         <li><a href="drink">drink</a></li>
-        <li><a href="employee">Employee</a></li>
+        <li><a href="add-employee">Employee</a></li>
+        <li><a href ="loginPage">logout</a></li>
     </ul>
 </nav>
-<h3>login please</h3>
-<fieldset>
-    <legend>login here</legend>
-    <form action="loginPage" method="post">
 
-        Username: <input type="text" name="username"><br>
-        <br>
-        Password: <input type="password" name="pwd">
-        <br><br>
-        <input type="submit" value="Login">
-        remember<input type="checkbox" value="'remember me" name="rem" checked>
-    </form>
-</fieldset>
-
+<h2 style="color: brown">online food ordering system</h2>
 </body>
 </html>

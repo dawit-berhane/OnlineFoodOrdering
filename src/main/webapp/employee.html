@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title> add breakfast</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="resource/breakfast.css" rel="stylesheet">
+    <script src="resource/employee.js"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.jsp" >Home</a></li>
+        <li><a href="add-food">add new food</a></li>
+        <li><a href="breakfast">breakfast</a></li>
+        <li><a href="lunch">lunch</a></li>
+        <li><a href="dinner">dinner</a></li>
+        <li><a href="dessert">dessert</a></li>
+        <li><a href="drink">drink</a></li>
+        <li><a href="add-employee">Employee</a></li>
+        <li><a href ="loginPage">logout</a></li>
+    </ul>
+</nav>
+<h3>add new food to the list</h3>
+<!--<div>-->
+    <form action="add-employee" method="post" id="form">
+        <div>
+            <label for="fname"> Employee First Name </label>
+            <input type="text"  name="name" id="fname" placeholder="first name of Employee" required/>
+        </div>
+        <div>
+            <label for="lname"> Employee Last Name </label>
+            <input type="text"  name="description" id="lname" placeholder="last name of the employee" required/>
+        </div>
+        <div>
+            <label for="salary"> Salary </label>
+            <input type="number"  name="price" id="salary" placeholder="salary of the employee" required/>
+        </div>
+        <div>
+            <label>Employee type</label>
+            <select  name="employeeType" id="employeeType" required>
+                <option value="sel">select employee type</option>
+                <option value="PERMANENT">permanent</option>
+                <option value="TEMPORARY">temporary</option>
+                <option value="PART-TIME">part-time</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit" id="save_employee_button" class="btn btn-primary">Save food</button>
+        </div>
+        <div>
+            <button hidden id="cancel_update_button" class="update">Cancel update</button>
+        </div>
+        <div>
+            <button hidden id="update_button" class="update">Update food item</button>
+        </div>
+        <div>
+            <p id="check">Employee already exists</p>
+        </div>
+
+
+    </form>
+<!--</div>-->
+<!--    <div>-->
+    <h3>list of Employee</h3>
+    <table id="employee_table">
+        <thead>
+        <tr><th>First Name</th><th>Last Name</th><th>salary</th><th>Employee Type</th><th>Action</th></tr>
+        </thead>
+        <tbody id="employee_list"></tbody>
+</table>
+<!--</div>-->
+
+</body>
+</html>

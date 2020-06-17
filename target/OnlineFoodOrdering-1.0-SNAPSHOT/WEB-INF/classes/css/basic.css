@@ -1,0 +1,20 @@
+
+body{
+    background-color: #A2B964;
+
+}
+
+nav.backtohome{
+    position: fixed;
+    top:3px;
+    right:0px;
+    background-color: #406156;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

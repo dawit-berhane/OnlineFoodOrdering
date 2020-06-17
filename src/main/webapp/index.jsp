@@ -16,7 +16,7 @@
   <meta name="description" content="Response design">
   <meta name="author" content="bootstrap">
   <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
-  <jsp:include page="resources.jsp"></jsp:include>
+<%--  <jsp:include page="resources.jsp"></jsp:include>--%>
     <link href="resources/css/grid.css" type="text/css" rel="stylesheet">
   <title>Home Page</title>
 </head>

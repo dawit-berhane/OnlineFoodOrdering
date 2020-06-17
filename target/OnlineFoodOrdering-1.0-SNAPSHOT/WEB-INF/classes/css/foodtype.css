@@ -1,0 +1,22 @@
+body{
+    background-color: #A2B964;
+
+}
+table {
+    border-top: 2px solid red;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: 2px solid rgb(125, 48, 207);
+    background-color: turquoise;
+    border-radius: 5px;
+    margin-right: 50px;
+    list-style-type: none
+
+}

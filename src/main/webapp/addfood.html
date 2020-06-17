@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> add breakfast</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="resource/breakfast.css" rel="stylesheet">
+    <script src="resource/action.js"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.jsp" >Home</a></li>
+        <li><a href="add-food">add new food</a></li>
+        <li><a href="breakfast">breakfast</a></li>
+        <li><a href="lunch">lunch</a></li>
+        <li><a href="dinner">dinner</a></li>
+        <li><a href="dessert">dessert</a></li>
+        <li><a href="drink">drink</a></li>
+        <li><a href="add-employee">Employee</a></li>
+        <li><a href ="loginPage">logout</a></li>i>
+    </ul>
+</nav>
+
+<h3>add new food to the list</h3>
+<form action="add-food" method="post" id="form">
+    <div>
+        <label for="food_item_name"> Food Name </label>
+        <input required type="text" name="name" id="food_item_name" placeholder="name of food"/>
+    </div>
+    <div>
+        <label for="food_item_description"> Food description </label>
+        <input required type="text" name="description" id="food_item_description" placeholder="description of food"/>
+    </div>
+    <div>
+        <label for="food_item_price"> price </label>
+        <input required type="number" name="price" id="food_item_price" placeholder="price of food"/>
+    </div>
+    <div>
+        <label>Meal type</label>
+        <select  required name="foodType" id="food_item_type" >
+            <option value="">select meal type</option>
+            <option value="BREAKFAST">breakfast</option>
+            <option value="LUNCH">lunch</option>
+            <option value="DINNER">dinner</option>
+            <option value="DRINK">drink</option>
+            <option value="DESSERT">dessert</option>
+
+        </select>
+    </div>
+   <div>
+       <button type="submit" id="save_food_button" class="btn btn-primary">Save food</button>
+   </div>
+    <div>
+        <button hidden id="cancel_update_button" class="update">Cancel update</button>
+    </div>
+    <div>
+        <button hidden id="update_button" class="update">Update food item</button>
+    </div>
+    <div>
+        <p id="check">Food already exists</p>
+    </div>
+
+</form>
+<h3>list of food</h3>
+<table id="food_table">
+
+    <thead>
+    <tr><th>Food Name</th><th>Food description</th><th>price</th><th>Meal Category</th><th>Action</th></tr>
+    </thead>
+<tbody id="food_list"></tbody>
+</table>
+</body>
+</html>
