@@ -29,12 +29,18 @@
     color: white;
 }
 
-.btnOrder, #btnChkout{
+.btnOrder{
     background-color: linen;
 }
 
-#payBtn{
+#payBtn, #btnChkout{
     background-color: orangered;
     width: 200px;
     height: 50px;
+}
+
+#top span{
+    width: 100px;
+    horiz-align: left;
+
 }

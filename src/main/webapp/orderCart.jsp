@@ -21,7 +21,10 @@
     <script type="text/javascript" src="resources/js/cart.js"></script>
 </head>
 <body>
-
+<nav id="top">
+    <span> <a href="menu.jsp">Go to menu Page</a></span>
+    <span> <a href="login.jsp"> Logout</a></span>
+</nav>
 <table id="checkoutTable">
     <thead>
     <tr>
@@ -62,7 +65,7 @@
 </table>
 <button id="payBtn">Pay</button>
 <p> The food will be delivered to your Address: ${address}</p>
-<p> <a href="menu.jsp">Go to menu Page</a></p>
+
 
 </body>
 </html>

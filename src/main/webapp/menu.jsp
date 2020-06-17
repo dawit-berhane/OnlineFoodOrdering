@@ -29,6 +29,7 @@
 
 <div class="backtohome">
     <a href="index.jsp">  Home </a>
+    <a href="login.jsp"> Logout</a>
 </div>
 <h1>Menu Page</h1>
 Welcome ${userName}
