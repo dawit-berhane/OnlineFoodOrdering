@@ -38,7 +38,6 @@ public class OrderController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = req.getSession();
-        //System.out.println(session.getAttribute("userName"));
         String jsonString = req.getParameter("order");
         //System.out.println(jsonString);
         JsonElement jelement = new JsonParser().parse(jsonString);
