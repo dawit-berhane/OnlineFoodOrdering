@@ -26,7 +26,8 @@ public class LoginController extends HttpServlet {
         Map<String, Customer> customerDb = customerDAO.getCustomerDb();
 
         HttpSession session = req.getSession();
-        if(customerDb.get(userName)!= null){
+        if(customerDb.get(userName)!= null && customerDb.get(userName).getUserName().equals(userName)
+        && customerDb.get(userName).getPassword().equals(password)){
             if("yes".equals(remember)){
                 Cookie user_cookie = new Cookie("user", userName);
                 user_cookie.setMaxAge(3600 * 60 * 24 * 30);

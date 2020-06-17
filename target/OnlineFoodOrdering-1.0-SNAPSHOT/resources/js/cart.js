@@ -1,6 +1,6 @@
 $(function () {
     $('#btnChkout').click(toCart);
-
+    $('#payBtn').click(showMessage);
     function toCart() {
         let orders = "";
         let row = $('#orderTbl td:first-child').each(function () {
@@ -11,7 +11,7 @@ $(function () {
         $.post('checkout',{checkout: JSON.stringify(order)}, checkout, "json");
     }
 
-    $("#success_msg").click(showMessage);
+
 })
 
 
@@ -38,9 +38,9 @@ function checkout(data) {
 }
 
 function showMessage() {
-    $('#success_msg').css({
-        'text': 'Payment successful',
+    $('#success_msg').text("payment done").css({
         'color': 'Green',
         'font-size': '16pt'
-    })
+    });
+
 }
