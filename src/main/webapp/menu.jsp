@@ -16,6 +16,16 @@
     <script type="text/javascript" src="resources/js/cart.js"></script>
 </head>
 <body>
+<%
+    response.setHeader("Cache-Control","no-cache");
+    response.setHeader("Cache-Control","no-store");
+    response.setHeader("Pragma","no-cache");
+    response.setDateHeader ("Expires", 0);
+
+    if(session.getAttribute("userName")==null)
+        response.sendRedirect("login.jsp");
+%>
+
 <div class="backtohome">
     <a href="index.jsp">  Home </a>
 </div>

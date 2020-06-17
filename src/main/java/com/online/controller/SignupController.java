@@ -16,8 +16,8 @@ public class SignupController extends HttpServlet {
 
     CustomerDAO customerDAO = new CustomerDAO();
     Map<String, Customer> customerDb = customerDAO.getCustomerDb();
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+@Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
         // get values from the form
@@ -26,7 +26,7 @@ public class SignupController extends HttpServlet {
 
         String userName = request.getParameter("userName");
 
-        if(userName.equals("mesfin")) {
+        if(userName.equals("john")) {
             session.setAttribute("userName" , userName);
             response.sendRedirect("loginsecond.jsp");
         }
@@ -40,7 +40,7 @@ public class SignupController extends HttpServlet {
 
             Customer cust =  new Customer(4, firstName,lastName, userame,password,phone, "");
             customerDAO.addCustomer(cust);
-            
+
             response.sendRedirect("menu.jsp");
         }
 

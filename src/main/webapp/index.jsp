@@ -21,6 +21,13 @@
   <title>Home Page</title>
 </head>
 <body>
+<%
+  response.setHeader("Cache-Control","no-cache");
+  response.setHeader("Cache-Control","no-store");
+  response.setHeader("Pragma","no-cache");
+  response.setDateHeader ("Expires", 0);
+
+%>
 <div class="base">
 
   <header>
@@ -29,6 +36,7 @@
 
   <div class="menu row">
     <div class="col-2 col-md-2 col-lg-1"><a href="login.jsp">Login</a></div>
+    <div class="col-2 col-md-2 col-lg-1"><a href="menu.jsp"> Menu</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="login.jsp"> Admin</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="signup.jsp">sign up</a></div>
     <div class="col-2 col-md-2 col-lg-1"><a href="logout.jsp">Log out</a></div>

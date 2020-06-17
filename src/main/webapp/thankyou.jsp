@@ -17,6 +17,17 @@
     <jsp:include page="resources.jsp"></jsp:include>
 </head>
 <body>
+
+<%
+    response.setHeader("Cache-Control","no-cache");
+    response.setHeader("Cache-Control","no-store");
+    response.setHeader("Pragma","no-cache");
+    response.setDateHeader ("Expires", 0);
+
+    if(session.getAttribute("userName")==null)
+        response.sendRedirect("login.jsp");
+%>
+
 <div class="jumbotron bg-info">
     <h3 class="display-4"> you are logged out!</h3>
     <p class="lead">Thank you ! We hope to see you again.</p>

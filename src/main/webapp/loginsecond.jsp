@@ -20,7 +20,7 @@
 
         <form class="formValidator bg-info" method="post" action="menu">
             <div class="form-row bg-info">
-                <p> we have your information in file. please log in here</p>
+                <p style="color: red"> we have your information in file. please log in here</p>
                 <div class="form-group col-md-6">
                     <label>User Name: </label> <input type="text" class="form-control"  placeholder="Enter username.." value="${cookie.user.value}" name="userName">
                 </div>
