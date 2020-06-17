@@ -44,15 +44,36 @@
 
   <div class="row">
     <div id="col1" class="col-6 col-md-4 col-lg-4"><img src="resources/images/dinning.jpg" width="1300" class="img-fluid" alt="Responsive image"></div>
-    <div id="col2" class="col-6 col-md-4 col-lg-4"><img src="resources/images/weekend.jpeg" height="300" width="450"  class="img-fluid" alt="Responsive image"></div>
+    <div id="col2" class="col-6 col-md-4 col-lg-4"><img src="resources/images/top1.jpeg" height="300" width="450"  class="img-fluid" alt="Responsive image"></div>
     <div id="col3" class="col-12 col-md-4 col-lg-4"><img src="resources/images/hours.jpeg"  class="img-fluid" alt="bar" height="300" width="450"></div>
   </div>
   <footer>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body bg-primary">
+            <h5 class="card-title">Please see our main dish</h5>
+            <p class="card-text">free cocktails with order of $15 or above</p>
+            <a href="#" class="btn btn-danger">Weekend specials </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body bg-primary">
+            <h5 class="card-title">we have some special deal for you</h5>
+            <p class="card-text">All pizza $5 starting from 5 PM CT.</p>
+            <a href="#" class="btn btn-danger">Week days specials</a>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="fixed">
        <p>Chat with us</p>
       </div>
-
   </footer>
+
+</div>
 </div>
 
 </body>

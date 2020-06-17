@@ -1,0 +1,39 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #A2B964;
+}
+
+div.backtohome{
+    position: fixed;
+    top:50px;
+    right:50px;
+    background-color: green;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    background-color: #c3e6cb;
+}
+body, input, button {
+    font-family: "Century Gothic",sans-serif;
+    font-size: 20pt;
+}
+div {
+    margin: 0.5em;
+}
+
+div #receipt{
+    visibility: hidden;
+}
+
+input:hover{
+    border: 5px solid #1c7430;
+}

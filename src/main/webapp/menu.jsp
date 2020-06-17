@@ -8,8 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
     <title>Menu</title>
+    <jsp:include page="resources.jsp"></jsp:include>
+    <link href="resources/css/basic.css" type="text/css" rel="stylesheet">
     <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="resources/js/menu.js"></script>
@@ -26,9 +27,14 @@
         response.sendRedirect("login.jsp");
 %>
 
-<div class="backtohome">
-    <a href="index.jsp">  Home </a>
-</div>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" href="index.jsp">home|</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="special.jsp">Deals</a>
+    </li>
+</ul>
 <h1>Menu Page</h1>
 Welcome ${userName}
 <div>
@@ -46,21 +52,21 @@ Welcome ${userName}
                 <td>Burger made with beef and cheese</td>
                 <td> <input id="Burger" type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$6</td>
-                <td><button class="btnOrder" type="button" value="Burger">Add</button></td>
+                <td><button class=" btn-success btnOrder" type="button" value="Burger">Add</button></td>
             </tr>
             <tr>
                 <td><img src="resources/images/steak.jpg" alt="steak" width="100" height="100"></td>
                 <td>Steak with rice</td>
                 <td> <input type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$12</td>
-                <td><button class="btnOrder" type="button" value="Steak">Add</button></td>
+                <td><button class=" btn-success btnOrder" type="button" value="Steak">Add</button></td>
             </tr>
             <tr>
                 <td><img src="resources/images/fish.jpg" alt="fish" width="100" height="100"></td>
                 <td>grilled fish</td>
                 <td> <input type="text" maxlength="2" size="2" value="1"> </td>
                 <td>$20</td>
-                <td><button class="btnOrder" type="button" value="Fish">Add</button></td>
+                <td><button class=" btn-success btnOrder" type="button" value="Fish">Add</button></td>
             </tr>
         </table>
     </form>
@@ -79,7 +85,7 @@ Welcome ${userName}
 
             </tbody>
         </table>
-        <button id="btnChkout" type="submit">Continue to Checkout</button>
+        <button class="btn-success" id="btnChkout" type="submit">Continue to Checkout</button>
     </form>
 
 
