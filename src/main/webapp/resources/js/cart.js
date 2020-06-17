@@ -10,6 +10,8 @@ $(function () {
         let order = process(orders);
         $.post('checkout',{checkout: JSON.stringify(order)}, checkout, "json");
     }
+
+    $("#success_msg").click(showMessage);
 })
 
 
@@ -28,9 +30,17 @@ function createObject(order){
 }
 
 function checkout(data) {
-    var td0=$('<td>').text(data.id);
-    var td1 = $('<td>').text(data.name);
-    var td2 = $('<td>').text(data.price);
-    var tr = $('<tr>').append(td0).append(td1).append(td2);
+    let td0=$('<td>').text(data.id);
+    let td1 = $('<td>').text(data.name);
+    let td2 = $('<td>').text(data.price);
+    let tr = $('<tr>').append(td0).append(td1).append(td2);
     $('#checkoutTable > tbody').append(tr);
+}
+
+function showMessage() {
+    $('#success_msg').css({
+        'text': 'Payment successful',
+        'color': 'Green',
+        'font-size': '16pt'
+    })
 }

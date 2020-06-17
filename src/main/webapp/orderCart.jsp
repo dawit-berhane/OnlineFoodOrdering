@@ -65,6 +65,7 @@
 </table>
 <button id="payBtn">Pay</button>
 <p> The food will be delivered to your Address: ${address}</p>
+<p id="success_msg" ></p>
 
 
 </body>
