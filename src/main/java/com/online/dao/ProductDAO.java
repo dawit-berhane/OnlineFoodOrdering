@@ -2,6 +2,7 @@ package com.online.dao;
 
 import com.online.model.Product;
 
+import java.security.ProtectionDomain;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,5 +24,10 @@ public class ProductDAO {
 
     public Map<String,Product> getAllProducts(){
         return productDao;
+    }
+
+    public void addProduct(Product product){
+        productDao.put(product.getName(), product);
+
     }
 }
