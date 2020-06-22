@@ -109,7 +109,7 @@
     <p id="total">$0.00 </p>
 </div>
 <div>
-    <button id="btnreceipt"> view Order items</button>
+    <button class="btn btn-success" id="btnreceipt"> pay</button>
 </div>
 <div>
     <label for="receipt">
